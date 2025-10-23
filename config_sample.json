@@ -1,0 +1,9 @@
+{
+  "api_key": "YOUR_API_KEY",
+  "username": "lukiex",
+  "uuid": "playeruuidwithoutdashes",
+  "endpoint": "skyblock/profiles",
+  "jmespath": "profiles[0].members.'<uuid>'.experience_skill_farming",
+  "interval": 300,
+  "notify": true
+}
