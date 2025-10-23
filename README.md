@@ -9,7 +9,7 @@ Features
 - Config via CLI or JSON config file
 
 Files
-- `monitor_hypixel.py` – the monitor script
+- `main.py` – the monitor script
 - `config_sample.json` – example config
 - `requirements.txt` – Python dependencies
 
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 Monitor a player's network level (player endpoint):
 
 ```powershell
-python monitor_hypixel.py -k YOUR_API_KEY -u SomeUsername -e player -j "player.networkExp" -i 300 --notify
+python main.py -k YOUR_API_KEY -u SomeUsername -e player -j "player.networkExp" -i 300 --notify
 ```
 
 Monitor a SkyBlock profile field (you will need the player's UUID):
@@ -38,7 +38,7 @@ Monitor a SkyBlock profile field (you will need the player's UUID):
 Example (monitor raw farming experience in first profile's member entry):
 
 ```powershell
-python monitor_hypixel.py -k YOUR_API_KEY -e skyblock/profiles -j "profiles[0].members.'<uuid>'.experience_skill_farming" -i 300
+python main.py -k YOUR_API_KEY -e skyblock/profiles -j "profiles[0].members.'<uuid>'.experience_skill_farming" -i 300
 ```
 
 Notes on JMESPath
